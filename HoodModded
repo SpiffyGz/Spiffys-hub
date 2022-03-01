@@ -26,6 +26,7 @@ local TextLabel_5 = Instance.new("TextLabel")
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
 
 HubFrame.Name = "HubFrame"
 HubFrame.Parent = ScreenGui
@@ -211,7 +212,7 @@ TextLabel_5.TextSize = 28.000
 
 -- Scripts:
 
-local function LHGCHER_fake_script() -- Main.LocalScript 
+local function LVKPSV_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -219,8 +220,8 @@ local function LHGCHER_fake_script() -- Main.LocalScript
 		script.Parent.Parent.Parent.InfoFrame.Visible = false
 	end)
 end
-coroutine.wrap(LHGCHER_fake_script)()
-local function HMUD_fake_script() -- Info.LocalScript 
+coroutine.wrap(LVKPSV_fake_script)()
+local function DQELE_fake_script() -- Info.LocalScript 
 	local script = Instance.new('LocalScript', Info)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -228,56 +229,56 @@ local function HMUD_fake_script() -- Info.LocalScript
 		script.Parent.Parent.Parent.InfoFrame.Visible = true
 	end)
 end
-coroutine.wrap(HMUD_fake_script)()
-local function JPAGV_fake_script() -- Aimlock.LocalScript 
+coroutine.wrap(DQELE_fake_script)()
+local function TDWH_fake_script() -- Aimlock.LocalScript 
 	local script = Instance.new('LocalScript', Aimlock)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Hyotinhofofinho/s1mple/main/LIXO"))()
 	end)
 end
-coroutine.wrap(JPAGV_fake_script)()
-local function CWYET_fake_script() -- Speed.LocalScript 
+coroutine.wrap(TDWH_fake_script)()
+local function PMOB_fake_script() -- Speed.LocalScript 
 	local script = Instance.new('LocalScript', Speed)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/angeloX041/Speedc/main/SuperSpeedC ", true))()
 	end)
 end
-coroutine.wrap(CWYET_fake_script)()
-local function EZDALTD_fake_script() -- Fov120.LocalScript 
+coroutine.wrap(PMOB_fake_script)()
+local function XLZR_fake_script() -- Fov120.LocalScript 
 	local script = Instance.new('LocalScript', Fov120)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		workspace.CurrentCamera.FieldOfView=120
 	end)
 end
-coroutine.wrap(EZDALTD_fake_script)()
-local function HUFO_fake_script() -- Fov90.LocalScript 
+coroutine.wrap(XLZR_fake_script)()
+local function SWUMYZ_fake_script() -- Fov90.LocalScript 
 	local script = Instance.new('LocalScript', Fov90)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		workspace.CurrentCamera.FieldOfView=90
 	end)
 end
-coroutine.wrap(HUFO_fake_script)()
-local function UDWBOE_fake_script() -- Esp.LocalScript 
+coroutine.wrap(SWUMYZ_fake_script)()
+local function IPAQB_fake_script() -- Esp.LocalScript 
 	local script = Instance.new('LocalScript', Esp)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/uw2P2fbY", true))()
 	end)
 end
-coroutine.wrap(UDWBOE_fake_script)()
-local function XPWCYY_fake_script() -- FaceChanger.LocalScript 
+coroutine.wrap(IPAQB_fake_script)()
+local function MCCJ_fake_script() -- FaceChanger.LocalScript 
 	local script = Instance.new('LocalScript', FaceChanger)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/carlcoded/Scripts/main/carlface'))()
 	end)
 end
-coroutine.wrap(XPWCYY_fake_script)()
-local function STSS_fake_script() -- HubFrame.LocalScript 
+coroutine.wrap(MCCJ_fake_script)()
+local function TOFJ_fake_script() -- HubFrame.LocalScript 
 	local script = Instance.new('LocalScript', HubFrame)
 
 	local Plr = game.Players.LocalPlayer
@@ -296,4 +297,4 @@ local function STSS_fake_script() -- HubFrame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(STSS_fake_script)()
+coroutine.wrap(TOFJ_fake_script)()
