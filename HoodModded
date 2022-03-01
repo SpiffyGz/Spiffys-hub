@@ -1,0 +1,299 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local HubFrame = Instance.new("Frame")
+local SideBar = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Main = Instance.new("TextButton")
+local Info = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local MainFrame = Instance.new("Frame")
+local Aimlock = Instance.new("TextButton")
+local Speed = Instance.new("TextButton")
+local Fov120 = Instance.new("TextButton")
+local Fov90 = Instance.new("TextButton")
+local Esp = Instance.new("TextButton")
+local FaceChanger = Instance.new("TextButton")
+local InfoFrame = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+HubFrame.Name = "HubFrame"
+HubFrame.Parent = ScreenGui
+HubFrame.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+HubFrame.BorderSizePixel = 0
+HubFrame.Position = UDim2.new(0.335156709, 0, 0.343859673, 0)
+HubFrame.Size = UDim2.new(0, 550, 0, 330)
+HubFrame.Active = true
+HubFrame.Draggable = true
+
+SideBar.Name = "SideBar"
+SideBar.Parent = HubFrame
+SideBar.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+SideBar.BorderSizePixel = 0
+SideBar.Size = UDim2.new(0, 135, 0, 329)
+
+TextLabel.Parent = SideBar
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 135, 0, 28)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "Spiffy's Hub"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 24.000
+
+Main.Name = "Main"
+Main.Parent = SideBar
+Main.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Main.BackgroundTransparency = 1.000
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0, 0, 0.151975691, 0)
+Main.Size = UDim2.new(0, 135, 0, 50)
+Main.Font = Enum.Font.FredokaOne
+Main.Text = "Main"
+Main.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main.TextSize = 30.000
+
+Info.Name = "Info"
+Info.Parent = SideBar
+Info.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+Info.BackgroundTransparency = 1.000
+Info.BorderSizePixel = 0
+Info.Position = UDim2.new(0, 0, 0.376899719, 0)
+Info.Size = UDim2.new(0, 135, 0, 50)
+Info.Font = Enum.Font.FredokaOne
+Info.Text = "Info"
+Info.TextColor3 = Color3.fromRGB(255, 255, 255)
+Info.TextSize = 30.000
+
+TextLabel_2.Parent = SideBar
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0, 0, 0.914893627, 0)
+TextLabel_2.Size = UDim2.new(0, 135, 0, 28)
+TextLabel_2.Font = Enum.Font.FredokaOne
+TextLabel_2.Text = "v1.0.0"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 24.000
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = HubFrame
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.BackgroundTransparency = 1.000
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.24545455, 0, 0, 0)
+MainFrame.Size = UDim2.new(0, 415, 0, 329)
+MainFrame.Visible = false
+
+Aimlock.Name = "Aimlock"
+Aimlock.Parent = MainFrame
+Aimlock.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+Aimlock.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Aimlock.BorderSizePixel = 0
+Aimlock.Position = UDim2.new(0.0240963828, 0, 0.0607902743, 0)
+Aimlock.Size = UDim2.new(0, 189, 0, 50)
+Aimlock.Font = Enum.Font.FredokaOne
+Aimlock.Text = "Aimlock"
+Aimlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aimlock.TextSize = 35.000
+
+Speed.Name = "Speed"
+Speed.Parent = MainFrame
+Speed.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+Speed.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Speed.BorderSizePixel = 0
+Speed.Position = UDim2.new(0.520481884, 0, 0.060790278, 0)
+Speed.Size = UDim2.new(0, 189, 0, 50)
+Speed.Font = Enum.Font.FredokaOne
+Speed.Text = "Speed (C)"
+Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+Speed.TextSize = 35.000
+
+Fov120.Name = "Fov120"
+Fov120.Parent = MainFrame
+Fov120.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+Fov120.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Fov120.BorderSizePixel = 0
+Fov120.Position = UDim2.new(0.0240963567, 0, 0.422492385, 0)
+Fov120.Size = UDim2.new(0, 189, 0, 50)
+Fov120.Font = Enum.Font.FredokaOne
+Fov120.Text = "Fov 120"
+Fov120.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fov120.TextSize = 35.000
+
+Fov90.Name = "Fov90"
+Fov90.Parent = MainFrame
+Fov90.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+Fov90.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Fov90.BorderSizePixel = 0
+Fov90.Position = UDim2.new(0.520481884, 0, 0.422492385, 0)
+Fov90.Size = UDim2.new(0, 189, 0, 50)
+Fov90.Font = Enum.Font.FredokaOne
+Fov90.Text = "Fov 90"
+Fov90.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fov90.TextSize = 35.000
+
+Esp.Name = "Esp"
+Esp.Parent = MainFrame
+Esp.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+Esp.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Esp.BorderSizePixel = 0
+Esp.Position = UDim2.new(0.0240963567, 0, 0.787234008, 0)
+Esp.Size = UDim2.new(0, 189, 0, 50)
+Esp.Font = Enum.Font.FredokaOne
+Esp.Text = "Esp"
+Esp.TextColor3 = Color3.fromRGB(255, 255, 255)
+Esp.TextSize = 35.000
+
+FaceChanger.Name = "FaceChanger"
+FaceChanger.Parent = MainFrame
+FaceChanger.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+FaceChanger.BorderColor3 = Color3.fromRGB(255, 255, 255)
+FaceChanger.BorderSizePixel = 0
+FaceChanger.Position = UDim2.new(0.520481884, 0, 0.787234008, 0)
+FaceChanger.Size = UDim2.new(0, 189, 0, 50)
+FaceChanger.Font = Enum.Font.FredokaOne
+FaceChanger.Text = "FaceChanger"
+FaceChanger.TextColor3 = Color3.fromRGB(255, 255, 255)
+FaceChanger.TextSize = 35.000
+
+InfoFrame.Name = "InfoFrame"
+InfoFrame.Parent = HubFrame
+InfoFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfoFrame.BackgroundTransparency = 1.000
+InfoFrame.BorderSizePixel = 0
+InfoFrame.Position = UDim2.new(0.24545455, 0, 0, 0)
+InfoFrame.Size = UDim2.new(0, 415, 0, 328)
+InfoFrame.Visible = false
+
+TextLabel_3.Parent = InfoFrame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.257831335, 0, 0.0853658542, 0)
+TextLabel_3.Size = UDim2.new(0, 201, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "J = OPEN, K = CLOSE"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 28.000
+
+TextLabel_4.Parent = InfoFrame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.257831335, 0, 0.530487776, 0)
+TextLabel_4.Size = UDim2.new(0, 201, 0, 124)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "THE SCRIPTS USED IN THIS HUB IS NOT MINE PLEASE KEEP THAT IN MIND"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 28.000
+TextLabel_4.TextWrapped = true
+
+TextLabel_5.Parent = InfoFrame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.240963861, 0, 0.304878056, 0)
+TextLabel_5.Size = UDim2.new(0, 214, 0, 50)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "Made by spiffyL#0173"
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.TextSize = 28.000
+
+-- Scripts:
+
+local function LHGCHER_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.MainFrame.Visible = true
+		script.Parent.Parent.Parent.InfoFrame.Visible = false
+	end)
+end
+coroutine.wrap(LHGCHER_fake_script)()
+local function HMUD_fake_script() -- Info.LocalScript 
+	local script = Instance.new('LocalScript', Info)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.MainFrame.Visible = false
+		script.Parent.Parent.Parent.InfoFrame.Visible = true
+	end)
+end
+coroutine.wrap(HMUD_fake_script)()
+local function JPAGV_fake_script() -- Aimlock.LocalScript 
+	local script = Instance.new('LocalScript', Aimlock)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Hyotinhofofinho/s1mple/main/LIXO"))()
+	end)
+end
+coroutine.wrap(JPAGV_fake_script)()
+local function CWYET_fake_script() -- Speed.LocalScript 
+	local script = Instance.new('LocalScript', Speed)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/angeloX041/Speedc/main/SuperSpeedC ", true))()
+	end)
+end
+coroutine.wrap(CWYET_fake_script)()
+local function EZDALTD_fake_script() -- Fov120.LocalScript 
+	local script = Instance.new('LocalScript', Fov120)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		workspace.CurrentCamera.FieldOfView=120
+	end)
+end
+coroutine.wrap(EZDALTD_fake_script)()
+local function HUFO_fake_script() -- Fov90.LocalScript 
+	local script = Instance.new('LocalScript', Fov90)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		workspace.CurrentCamera.FieldOfView=90
+	end)
+end
+coroutine.wrap(HUFO_fake_script)()
+local function UDWBOE_fake_script() -- Esp.LocalScript 
+	local script = Instance.new('LocalScript', Esp)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/uw2P2fbY", true))()
+	end)
+end
+coroutine.wrap(UDWBOE_fake_script)()
+local function XPWCYY_fake_script() -- FaceChanger.LocalScript 
+	local script = Instance.new('LocalScript', FaceChanger)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/carlcoded/Scripts/main/carlface'))()
+	end)
+end
+coroutine.wrap(XPWCYY_fake_script)()
+local function STSS_fake_script() -- HubFrame.LocalScript 
+	local script = Instance.new('LocalScript', HubFrame)
+
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "j" then
+			script.Parent.Visible = true
+		end
+	end)
+	
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "k" then
+			script.Parent.Visible = false
+		end
+	end)
+end
+coroutine.wrap(STSS_fake_script)()
